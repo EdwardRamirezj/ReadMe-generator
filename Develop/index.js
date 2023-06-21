@@ -45,15 +45,15 @@ inquirer
     {
         type: 'input',
         message: 'Write a Description of your project?',
-        name: 'full Name',
-        default: 'Project Description'
+        name: 'Description',
+        default:  'Description'
     
 
     }, 
     {
         type: 'input',
         message: 'Describe the steps required to install your project for the Installation section',
-        name: 'installation',
+        name: 'Installation',
         default: 'installation '
     
 
@@ -61,7 +61,7 @@ inquirer
     {
         type: 'input',
         message: 'Write instructions and examples of your project in use for the usage section',
-        name: 'usage',
+        name: 'Usage',
 
     
 
@@ -101,7 +101,11 @@ inquirer
 
 ]).then(response => {
     fsReadme(response);
-})
+});
+
+const promptUser = () => {
+    return inquirer.prompt
+};
 
 
 
