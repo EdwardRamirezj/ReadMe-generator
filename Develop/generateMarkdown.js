@@ -20,10 +20,6 @@ function renderLicenseLink(license) {
   if (license === null)
   return ''
 }
-  const link = renderLicenseLink(license) 
-  
-  const section = `This is covered by the ${license} license.`
-  return section
 
 
 // TODO: Create a function that returns the license section of README
